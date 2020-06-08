@@ -114,7 +114,7 @@
       if (insertionTraversal){
         return $this[insertionTraversal](insertionNode);
       }else{
-        return insertionNode == "this" ? $this : insertionNode;
+        return insertionNode == "this" ? $this : document.querySelector(insertionNode);
       }
     }
 
